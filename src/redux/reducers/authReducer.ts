@@ -3,10 +3,12 @@ import {AuthentReducer} from '../../types/authTypes';
 
 const initialState: AuthentReducer = {
   createProfile: {
-    email: '',
-    mobile: '',
-    token: '',
-    gender: '',
+    FBAId: 0,
+    FullName: '',
+    UserName: '',
+    EmailID: '',
+    MobiNumb1: '',
+    ProfPictName: '',
   },
 };
 
@@ -23,10 +25,12 @@ const authReducer = createSlice({
 
     initcreateProfile(state) {
       state.createProfile = {
-        email: '',
-        mobile: '',
-        token: '',
-        gender: '',
+        FBAId: 0,
+        FullName: '',
+        UserName: '',
+        EmailID: '',
+        MobiNumb1: '',
+        ProfPictName: '',
       };
     },
   },

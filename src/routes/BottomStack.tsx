@@ -20,7 +20,7 @@ const BottomStack = () => {
       backBehavior="history"
       initialRouteName="Home"
       screenOptions={{
-        tabBarHideOnKeyboard: false,
+        tabBarHideOnKeyboard: true,
         headerShown: false,
       }}>
       <Tab.Screen name="Home" component={Home} />

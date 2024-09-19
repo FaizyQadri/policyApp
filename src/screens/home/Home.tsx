@@ -1,10 +1,10 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet, TextInput} from 'react-native';
 import React from 'react';
 
 const Home = () => {
   return (
     <View style={styles.root}>
-      <Text style={styles.text}>Home</Text>
+      <TextInput placeholder="Type here..." style={styles.input} />
     </View>
   );
 };
@@ -28,5 +28,11 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 18,
     fontWeight: '900',
+  },
+  input: {
+    height: 50,
+    marginHorizontal: 20,
+    borderWidth: 1,
+    width: '80%',
   },
 });

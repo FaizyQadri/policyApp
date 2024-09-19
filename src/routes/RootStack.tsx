@@ -9,14 +9,14 @@ import {RootState} from '../redux/store';
 const Stack = createNativeStackNavigator();
 
 const RootStack = () => {
-  const token = useSelector(
-    (state: RootState) => state.authReducer.createProfile.token,
+  const FBAId = useSelector(
+    (state: RootState) => state.authReducer.createProfile.FBAId,
   );
 
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{animation: 'fade', headerShown: false}}>
-        {token.length === 0 ? (
+        {FBAId === 0 ? (
           <Stack.Screen name="AuthStack" component={AuthStack} />
         ) : (
           <Stack.Screen name="DrawerStack" component={DrawerStack} />

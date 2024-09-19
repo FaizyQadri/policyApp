@@ -1,8 +1,10 @@
 export type AuthentReducer = {
   createProfile: {
-    email: string;
-    mobile: string;
-    token: string;
-    gender: string;
+    FBAId: number;
+    FullName: string;
+    UserName: string;
+    EmailID: string;
+    MobiNumb1: string;
+    ProfPictName: string;
   };
 };
