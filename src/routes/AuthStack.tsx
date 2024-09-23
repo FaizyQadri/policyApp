@@ -3,8 +3,10 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Signup from '../screens/signup/Signup';
 import Signin from '../screens/signin/Signin';
 import ForgotPassword from '../screens/forgotPassword/ForgotPassword';
+import FoodRecall from '../screens/foodRecall/FoodRecall';
 
 export type AuthStackParams = {
+  FoodRecall:undefined;
   Onboarding: undefined;
   Signup: undefined;
   Signin: undefined;
@@ -20,6 +22,7 @@ const AuthStack = () => {
         animation: 'fade',
         headerShown: false,
       }}>
+      <Stack.Screen name="FoodRecall" component={FoodRecall} />
       <Stack.Screen name="Signin" component={Signin} />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
